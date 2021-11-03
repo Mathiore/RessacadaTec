@@ -7,6 +7,8 @@
     <title>RessacadaTec</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/Servicos/card.css">
+    <link rel="stylesheet" href="./css/Portifolio/section.css">
+    <link rel="stylesheet" href="./css/Contatos/contatos.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
@@ -25,17 +27,18 @@
                 <li><a href="#CONTATOS">CONTATOS</a></li>
             </ul>
         </nav>
+        <div class="fas fa-bars"></div>
     </header>
 
     <section id="INICIO" class="container-fluid"></section>
         <div class="row min-vh-100 align-items-center">
             <div class="row align-items-center">
-                <div class="col">
+                <div class="col-md-6 image">
                     <img src="./img/svgs/Devices.svg" alt="banner">
                 </div>
                 <div class="col">
                     <h1>Ressacada<strong>Tec</strong></h1>
-                    <h2>Um <strong>passo</strong> mais próximo do seu <strong>objetivo!</strong></h2>
+                    <h2>Um <strong>passo</strong> mais próximo do seu objetivo!</h2>
                 </div>
             </div>
         </div>
@@ -88,13 +91,45 @@
         <div class="heading text-center">
             <h1>PORTIFÓLIO</h1>
         </div>
+            <div class="producoes">
+                <div class="content">
+                    <img src="./img/portifolio/Ressacadaprojeto.png" alt="">
+                    <div class="text-container">
+                        <h1><a href="https://ressacadacrew.com/">Acessar RessacadaCrew</a></h1>
+                    </div>
+                </div>
+                <div class="content" style="width: 49%;">
+                    <img src="./img/portifolio/Matchprojeto.png" alt="">
+                    <div class="text-container" style="margin-left:30%;">
+                        <h1><a href="https://mathiore.github.io/matchit.github.io/">Acessar Match It</a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="CONTATOS"></section>
+    <section id="CONTATOS">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-md-6 ml-md-5 text-md-left text-center content">
+                <h2>ENTRE EM CONTATO</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Seu endereço de email:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button type="button" class="btn btn-outline-light">Enviar</button>
+                  </div>
+            </div>
+        </div>
+    </section>
 
-
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>

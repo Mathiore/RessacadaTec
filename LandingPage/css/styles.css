@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
 }
 
+h1{
+    font-family: 'Ubuntu', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -46,8 +49,15 @@ nav ul li a{
     color: #000;
 }
 
+.fas.fa-bars{
+    display: none;
+    cursor: pointer;
+    z-index: 10000;
+}
 
-
+.fa-times{
+    transform: skew(-180deg) rotate(-180deg);
+}
 #INICIO{
     z-index: 1;
     position: relative;
@@ -56,11 +66,10 @@ nav ul li a{
 
 .col h1{
     font-size:3rem;
-    overflow-y:hidden;
 }
 
 .col h2{
-    overflow-y:hidden;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .col img{
@@ -74,13 +83,15 @@ nav ul li a{
     font-family: 'Oswald', sans-serif;
     overflow-y: hidden ;
     color: #fff;
-    margin-bottom: 10%;
-    margin-left:8%;
+    margin-bottom: 15%;
+    margin-left:10%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 
 #SOBRE h1{
     margin-top: 5%;
-    overflow-y: hidden ;
+    font-family: 'Ubuntu', sans-serif;
     color: #fff;
 }
 #SERVICOS{
@@ -89,11 +100,9 @@ nav ul li a{
 
 #SERVICOS .row{
     margin-left: 5%;
-    
 }
 
 #SERVICOS h1, h2{
-    overflow-y: hidden;
     margin-top: 5%;
     margin-bottom:2%;
     font-family: 'Ubuntu', sans-serif;
@@ -101,7 +110,6 @@ nav ul li a{
 
 #SERVICOS h2{
     margin-bottom:5%;
-    
 }
 
 
@@ -110,15 +118,52 @@ nav ul li a{
     color:#fff;
 }
 
-#SERVICOS .card{
-    position: relative;
-    cursor: pointer;
-}
+@media (max-width:768px)
+{
+    .fas.fa-bars{
+        display: block;
+        font-size:2rem;
+    }
+    nav
+    {
+        position: fixed;
+        top:0;right:-120%;
+        height:100vh;
+        width:35rem;
+        background:#fff;
+        overflow-y: hidden;
+    }
+    nav ul
+    {
+        flex-flow:column;
+        justify-content: center;
+        height:100%;
+    }
+    nav ul li
+    {
+        margin:2rem 0;
+    }
+    nav ul li a
+    {
+        font-size:2rem;
+    }
+    .nav-toggle
+    {
+        right: 0;
+    }
+    .card-container{
+        flex-flow: column;
+    }
+    .col{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .producoes .content{
+        width: 100% !important; 
+    }
+    .mb-3{
+        margin-left:20%;
+    }
 
-#SERVICOS .card:hover{
-    background: linear-gradient(180deg,#564fcc, #8000a0);
-    background-size: 400%;
-    color: #fff;
-    box-shadow: 0px 0px 20px #4b4b4b;
-    transition: glow 0.3s;
 }
