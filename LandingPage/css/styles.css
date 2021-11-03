@@ -119,5 +119,6 @@ nav ul li a{
     background: linear-gradient(90deg, #8000a0,#564fcc);
     background-size: 400%;
     color: #fff;
-    
+    box-shadow: 0px 0px 20px #8000a0;
+    transition: glow 0.3s;
 }
