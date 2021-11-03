@@ -19,12 +19,13 @@
     
 }
 .producoes img{
+    filter: blur(10px) opacity(0.99) drop-shadow(0 0 0 #8000a0);
     width: 100%;
     object-fit: cover;
     transition: 0.5s;
 }
 .producoes img:hover{
-    filter: blur(10px);
+    filter: blur(0);
 }
 
 .text-container{
@@ -52,3 +53,4 @@
 .text-container a:hover{
     color:#6c63ff;
 }
+
