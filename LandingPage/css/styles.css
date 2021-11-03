@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+:root{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 2rem 3rem;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+header img{
+    width:50px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+nav ul li{
+    margin-right: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+#INICIO{
+    z-index: 1;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.col h1{
+    font-size:3rem;
+    overflow-y:hidden;
+}
+
+.col h2{
+    overflow-y:hidden;
+}
+
+.col img{
+    margin-left:10%;
+}
+
+#SOBRE{
+    background-color: #564fcc;
+}
+#SOBRE h3{
+    font-family: 'Oswald', sans-serif;
+    overflow-y: hidden ;
+    color: #fff;
+    margin-bottom: 10%;
+    margin-left:8%;
+}
+
+#SOBRE h1{
+    margin-top: 5%;
+    overflow-y: hidden ;
+    color: #fff;
+}
+#SERVICOS{
+    min-height: 100vh;
+}
+
+#SERVICOS .row{
+    margin-left: 5%;
+}
+
+#SERVICOS h1, h2{
+    overflow-y: hidden;
+    margin-top: 5%;
+    margin-bottom:2%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#SERVICOS h2{
+    margin-bottom:5%;
+}
+
+
+#SERVICOS .heading{
+    background-color:#6c63ff;
+    color:#fff;
+}
