@@ -116,9 +116,9 @@ nav ul li a{
 }
 
 #SERVICOS .card:hover{
-    background: linear-gradient(90deg, #8000a0,#564fcc);
+    background: linear-gradient(180deg,#564fcc, #8000a0);
     background-size: 400%;
     color: #fff;
-    box-shadow: 0px 0px 20px #8000a0;
+    box-shadow: 0px 0px 20px #4d4d4d;
     transition: glow 0.3s;
 }
